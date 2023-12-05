@@ -11,10 +11,10 @@ public class ShellSorter implements Sorter{
             for (int i = gap; i < n; i++){
                 int key = sortedArray.get(i);
                 int j = i;
-                while (j >= gap && sortedArray.get(i - gap) > key){
+                for (j = i; j >= gap && sortedArray.get(j - gap) > key; j -= gap) {
                     sortedArray.set(j, sortedArray.get(j - gap));
-                    j -= gap;
                 }
+                sortedArray.set(j, key);
             }
         }
 
