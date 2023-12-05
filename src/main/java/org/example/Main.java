@@ -15,8 +15,8 @@ public class Main {
         System.out.println("Original array: " + array);
 
         // Use BubbleSorter to sort the array
-        ShellSorter shellSorter = new ShellSorter();
-        ArrayList<Integer> sortedArray = shellSorter.sort(new ArrayList<>(array));
+        MergeSorter mergeSorter = new MergeSorter();
+        ArrayList<Integer> sortedArray = mergeSorter.sort(new ArrayList<>(array));
 
         // Display the sorted array
         System.out.println("Sorted array: " + sortedArray);
