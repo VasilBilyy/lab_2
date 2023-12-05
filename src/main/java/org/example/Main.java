@@ -1,8 +1,6 @@
 package org.example;
 import java.util.Random;
 import java.util.ArrayList;
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 
 
 public class Main {
@@ -14,11 +12,10 @@ public class Main {
         }
         System.out.println("Original array: " + array);
 
-        // Use BubbleSorter to sort the array
-        MergeSorter mergeSorter = new MergeSorter();
-        ArrayList<Integer> sortedArray = mergeSorter.sort(new ArrayList<>(array));
 
-        // Display the sorted array
+        QuickSorter quickSorter = new QuickSorter();
+        ArrayList<Integer> sortedArray = quickSorter.sort(new ArrayList<>(array));
+
         System.out.println("Sorted array: " + sortedArray);
     }
 }
