@@ -12,6 +12,7 @@ class BubbleSorter implements Sorter {
                     Collections.swap(sortedArray, j, j + 1);
                 }
             }
+
         }
 
         return sortedArray;

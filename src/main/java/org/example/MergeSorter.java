@@ -17,6 +17,7 @@ public class MergeSorter implements Sorter {
         left = sort(left);
         right = sort(right);
 
+
         merge(input, left, right);
 
         return input;

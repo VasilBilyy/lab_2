@@ -8,6 +8,7 @@ public class ShellSorter implements Sorter{
         int n = sortedArray.size();
 
         for (int gap = n / 2; gap > 0; gap /= 2){
+
             for (int i = gap; i < n; i++){
                 int key = sortedArray.get(i);
                 int j = i;

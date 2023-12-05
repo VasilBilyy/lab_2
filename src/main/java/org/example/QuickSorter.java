@@ -3,6 +3,7 @@ import java.util.Collections;
 import java.util.ArrayList;
 
 public class QuickSorter implements Sorter {
+
     public ArrayList<Integer> sort(ArrayList<Integer> input) {
         if (input == null || input.size() <= 1) {
             return new ArrayList<>(input);
